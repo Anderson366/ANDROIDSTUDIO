@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Aplicativo</string>
+    <string name="button1_toast">Button</string>
+    <string name="button2_count">Button</string>
+    <string name="textview">TextView</string>
+    <string name="toast_menssagem">Meu primeiro programa!</string>
+    <string name="inicio">0</string>
+
+</resources>
