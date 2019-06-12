@@ -10,6 +10,10 @@ public class Anuncio {
     private String data_anuncio;
     private String bairro;
 
+    public Anuncio(){
+
+    }
+
     public Anuncio(String titulo, String descricao, double preco, String data_anuncio, String bairro) {
         this.titulo = titulo;
         this.descricao = descricao;
@@ -24,7 +28,7 @@ public class Anuncio {
         anuncios.add(new Anuncio("Abajur 2", "Pequeno.", 20, "29 de maio de 2019", "Centro Sul"));
         anuncios.add(new Anuncio("Abajur 3", "Pequeno.", 19, "29 de maio de 2019", "Centro Sul"));
         anuncios.add(new Anuncio("Abajur 4", "Pequeno.", 18, "03 de junho de 2019", "Centro Sul"));
-        anuncios.add(new Anuncio("Abajur 5", "Pequeno.", 17, "05 de junho de 2019", "Centro Sul"));
+        anuncios.add(new Anuncio("Abajur 5", "Pequeno.", 17, "05 de junho de 2019", "Centro Norte"));
         return  anuncios;
     }
 

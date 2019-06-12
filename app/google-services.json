@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1000802255692",
+    "firebase_url": "https://olx4662019-4b654.firebaseio.com",
+    "project_id": "olx4662019-4b654",
+    "storage_bucket": "olx4662019-4b654.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1000802255692:android:a4ce42daf41e1664",
+        "android_client_info": {
+          "package_name": "com.example.aluno.myapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1000802255692-578q1jc7keemq05be2ja30d01h7950qo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDc6YQbV02m03EnjIJrmb4yaQXIaKCeZ44"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1000802255692-578q1jc7keemq05be2ja30d01h7950qo.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
