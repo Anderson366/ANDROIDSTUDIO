@@ -31,6 +31,7 @@ public class ListaAnuncioActivity extends AppCompatActivity {
         rvAnuncio = findViewById(R.id.rv_anuncio);
 //        atualizarViews();
         firestore = FirebaseFirestore.getInstance();
+
         
     }
 

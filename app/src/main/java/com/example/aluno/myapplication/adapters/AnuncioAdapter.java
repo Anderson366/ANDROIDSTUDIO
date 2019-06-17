@@ -23,7 +23,6 @@ public class AnuncioAdapter extends RecyclerView.Adapter<AnuncioAdapter.AnuncioV
     private Context context;
     private List<Anuncio> anuncios;
 
-
     public AnuncioAdapter(Context context, List<Anuncio> anuncios) {
         this.context = context;
         this.anuncios = anuncios;
