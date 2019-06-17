@@ -5,6 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.view.View;
 
 import com.example.aluno.myapplication.adapters.PaisesAdapter;
 import com.example.aluno.myapplication.modelos.Paises;
@@ -55,7 +56,6 @@ public class ListaPaisesActivity extends AppCompatActivity {
                     for (DocumentSnapshot documento: task.getResult()){
                         Paises pais = documento.toObject(Paises.class);
                         paises.add(pais);
-
                     }
                     //Terminou de pegar todos os documentos
                     atualizarRecyclerView(paises);
@@ -63,5 +63,9 @@ public class ListaPaisesActivity extends AppCompatActivity {
             }
         });
 
+    }
+
+    public void atualizarPaises(View view) {
+        obterDoFire();
     }
 }

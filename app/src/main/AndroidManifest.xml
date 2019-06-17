@@ -27,7 +27,6 @@
 
         </activity>
         <activity android:name=".ListaComidasActivity" />
-        <activity android:name=".ItemCelular" />
         <activity android:name=".ListaCelularActivity" />
         <activity android:name=".MainActivity" />
     </application>
