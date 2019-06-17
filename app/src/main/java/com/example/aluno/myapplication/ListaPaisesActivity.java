@@ -58,7 +58,6 @@ public class ListaPaisesActivity extends AppCompatActivity {
 
                     }
                     //Terminou de pegar todos os documentos
-                    //COMMIT
                     atualizarRecyclerView(paises);
                 }
             }
