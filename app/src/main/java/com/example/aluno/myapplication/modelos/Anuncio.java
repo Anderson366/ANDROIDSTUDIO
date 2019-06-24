@@ -10,7 +10,7 @@ public class Anuncio {
     private String data_anuncio;
     private String bairro;
 
-    public Anuncio(){
+    public Anuncio(String titulo, String descricao, double valor){
 
     }
 

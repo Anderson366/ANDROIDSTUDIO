@@ -1,5 +1,6 @@
 package com.example.aluno.myapplication;
 
+import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -48,6 +49,10 @@ public class ListaAnuncioActivity extends AppCompatActivity {
     //OnClick
     public void atualizar(View view){
         obterAnunciosDoFirestore();
+    }
+
+    public void formularioAnuncio(View view){
+        Intent intent = new Intent(this, FormularioAnuncioActivity.class);
     }
 
     private void atualizarRecyclerView(List<Anuncio> anuncios){
