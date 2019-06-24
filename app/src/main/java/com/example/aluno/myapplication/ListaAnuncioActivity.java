@@ -30,10 +30,7 @@ public class ListaAnuncioActivity extends AppCompatActivity {
         setContentView(R.layout.activity_lista_anuncio);
 
         rvAnuncio = findViewById(R.id.rv_anuncio);
-//        atualizarViews();
         firestore = FirebaseFirestore.getInstance();
-
-        
     }
 
     @Override

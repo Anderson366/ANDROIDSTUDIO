@@ -24,9 +24,7 @@
             android:parentActivityName=".ListaAnuncioActivity">
 
         </activity>
-        <activity
-            android:name=".ListaAnuncioActivity"
-            android:label="OLX FAKE">
+        <activity android:name=".ListaAnuncioActivity" android:label="OLX FAKE">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
