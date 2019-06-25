@@ -50,14 +50,13 @@ public class FormularioPaisActivity extends AppCompatActivity {
         });
     }
 
-    private Paises obterPaisDoFormulario() {
+    private Paises obterPaisDoFormulario(){
         String nome = editPaisNome.getText().toString();
-        double continente = Double.parseDouble(editPaisContinente.getText().toString());
+        String continente = editPaisContinente.getText().toString();
         String idioma = editPaisIdioma.getText().toString();
         double pib = Double.parseDouble(editPaisPib.getText().toString());
-        String populacao = editPaisPopulacao.getText().toString();
+        double populacao = Double.parseDouble(editPaisPopulacao.getText().toString());
 
         return new Paises(nome, continente, idioma, pib, populacao);
-
     }
 }
