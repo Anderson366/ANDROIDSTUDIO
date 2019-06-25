@@ -9,14 +9,21 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".FormularioAnuncioActivity"></activity>
+        <activity android:name=".FormularioPaisActivity"></activity>
+        <activity android:name=".FormularioAnuncioActivity" />
         <activity
             android:name=".DetalhePaisActivity"
-            android:parentActivityName=".ListaPaisesActivity" />
+            android:parentActivityName=".ListaPaisesActivity" >
+
+        </activity>
         <activity
             android:name=".ListaPaisesActivity"
             android:label="Lista de Paises">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
         <activity
             android:name=".ResultAnuncioActivity"
@@ -24,12 +31,10 @@
             android:parentActivityName=".ListaAnuncioActivity">
 
         </activity>
-        <activity android:name=".ListaAnuncioActivity" android:label="OLX FAKE">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+        <activity
+            android:name=".ListaAnuncioActivity"
+            android:label="OLX FAKE">
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity android:name=".ListaComidasActivity" />
         <activity android:name=".ListaCelularActivity" />

@@ -50,6 +50,7 @@ public class ListaAnuncioActivity extends AppCompatActivity {
 
     public void formularioAnuncio(View view){
         Intent intent = new Intent(this, FormularioAnuncioActivity.class);
+        startActivity(intent);
     }
 
     private void atualizarRecyclerView(List<Anuncio> anuncios){
@@ -69,7 +70,6 @@ public class ListaAnuncioActivity extends AppCompatActivity {
                     for (DocumentSnapshot documento: task.getResult()){
                         Anuncio anuncio = documento.toObject(Anuncio.class);
                         anuncios.add(anuncio);
-
                     }
                     //Terminou de pegar todos os documentos
                     atualizarRecyclerView(anuncios);

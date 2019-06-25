@@ -1,5 +1,6 @@
 package com.example.aluno.myapplication;
 
+import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -67,5 +68,10 @@ public class ListaPaisesActivity extends AppCompatActivity {
 
     public void atualizarPaises(View view) {
         obterDoFire();
+    }
+
+    public void formularioPais(View view) {
+        Intent intent = new Intent(this, FormularioPaisActivity.class);
+        startActivity(intent);
     }
 }

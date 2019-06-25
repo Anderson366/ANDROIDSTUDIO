@@ -17,7 +17,7 @@ import com.google.firebase.firestore.FirebaseFirestore;
 public class FormularioAnuncioActivity extends AppCompatActivity {
 
     EditText editAnuncioTitulo, editAnuncioDescricao, editAnuncioValor, editAnuncioBairro, editAnuncioData;
-    private FirebaseFirestore firestore;
+    FirebaseFirestore firestore;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -53,7 +53,9 @@ public class FormularioAnuncioActivity extends AppCompatActivity {
         String titulo = editAnuncioTitulo.getText().toString();
         String descricao = editAnuncioDescricao.getText().toString();
         double valor = Double.parseDouble(editAnuncioValor.getText().toString());
+        String bairro = editAnuncioBairro.getText().toString();
+        String data = editAnuncioData.getText().toString();
 
-        return new Anuncio(titulo, descricao, valor);
+        return new Anuncio(titulo, descricao, valor, bairro, data);
     }
 }
