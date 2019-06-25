@@ -10,7 +10,9 @@ public class Paises {
     String continente;
     double pib;
 
-    public Paises(String nome, double continente, String idioma, double pib, String populacao){}
+    public Paises(String nome, double continente, String idioma, double pib, String populacao){
+
+    }
 
     public Paises(String nome, double populacao, String idioma, String continente, double pib) {
         this.nome = nome;

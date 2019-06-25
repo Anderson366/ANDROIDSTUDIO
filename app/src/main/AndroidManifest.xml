@@ -9,33 +9,17 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".FormularioPaisActivity"></activity>
-        <activity android:name=".FormularioAnuncioActivity" />
-        <activity
-            android:name=".DetalhePaisActivity"
-            android:parentActivityName=".ListaPaisesActivity" >
-
-        </activity>
-        <activity
-            android:name=".ListaPaisesActivity"
-            android:label="Lista de Paises">
+        <activity android:name=".FormularioPaisActivity" android:label="Preencher Formulario"></activity>
+        <activity android:name=".FormularioAnuncioActivity"></activity>
+        <activity android:name=".DetalhePaisActivity" android:parentActivityName=".ListaPaisesActivity" ></activity>
+        <activity android:name=".ListaPaisesActivity" android:label="Lista de Paises">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".ResultAnuncioActivity"
-            android:label="Detalhes"
-            android:parentActivityName=".ListaAnuncioActivity">
-
-        </activity>
-        <activity
-            android:name=".ListaAnuncioActivity"
-            android:label="OLX FAKE">
-
-        </activity>
+        <activity android:name=".ResultAnuncioActivity" android:label="Detalhes" android:parentActivityName=".ListaAnuncioActivity"></activity>
+        <activity android:name=".ListaAnuncioActivity" android:label="OLX FAKE"></activity>
         <activity android:name=".ListaComidasActivity" />
         <activity android:name=".ListaCelularActivity" />
         <activity android:name=".MainActivity" />

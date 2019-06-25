@@ -68,11 +68,11 @@ public class PaisesAdapter extends RecyclerView.Adapter<PaisesAdapter.PaisesView
             Paises pais = paises.get(getAdapterPosition());
 
             Intent intent = new Intent(context, DetalhePaisActivity.class);
-            intent.putExtra("NOME PAIS",pais.getNome());
-            intent.putExtra("POPULACAO PAIS",pais.getPopulacao());
-            intent.putExtra("IDIOMA PAIS",pais.getIdioma());
-            intent.putExtra("CONTINENTE PAIS",pais.getContinente());
-            intent.putExtra("PIB PAIS",pais.getPib());
+            intent.putExtra("NOME PAIS", pais.getNome());
+            intent.putExtra("POPULACAO PAIS", pais.getPopulacao());
+            intent.putExtra("IDIOMA PAIS", pais.getIdioma());
+            intent.putExtra("CONTINENTE PAIS", pais.getContinente());
+            intent.putExtra("PIB PAIS", pais.getPib());
 
             context.startActivity(intent);
 
